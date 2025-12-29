@@ -109,5 +109,7 @@ helm install chart . -n monitoring-platform
 ```
 It is DONE!!!
 ---
+
+## Access the Dashboard
 search in your browser: http://dashboard.local/
 
