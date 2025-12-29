@@ -94,6 +94,6 @@ run the command below to forward a port for your web app service:
 kubectl port-forward service/frontend 30080:80 -n monitoring-platform
 ```
 
-## Access the Dashboard: http://localhost:30080
+## Access the Dashboard  http://localhost:30080
 
 ---
