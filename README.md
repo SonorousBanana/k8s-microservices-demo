@@ -59,7 +59,7 @@ minikube start --driver=docker
 ```
 ---
 
-## Run with Kubernetes
+## Run with Minikube / Kubernetes
 
 1. **Load the images from docker in minikube**:
 
