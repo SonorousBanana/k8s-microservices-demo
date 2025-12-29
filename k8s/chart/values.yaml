@@ -1,0 +1,13 @@
+host: dashboard.local
+
+frontend:
+  name: frontend
+  image: my-frontend:latest
+  port: 80
+  type: ClusterIP
+
+api:
+  name: api
+  image: my-api:latest
+  port: 5000
+  type: ClusterIP

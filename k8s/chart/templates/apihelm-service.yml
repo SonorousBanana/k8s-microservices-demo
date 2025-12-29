@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.api.name }}
+  namespace: monitoring-platform
+spec:
+  selector:
+    app: {{ .Values.api.name }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.api.port }}
+      targetPort: {{ .Values.api.port }}
+  type: {{ .Values.api.type }}

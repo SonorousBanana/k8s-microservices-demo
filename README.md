@@ -68,28 +68,7 @@ minikube image load my-api:latest
 minikube image load my-frontend:latest
 ```
 
-2. **Apply kubernetes manifests**:
-
-first create a namespace for your project
-
-#check kubectl commands by running "kubectl" in termila
-
-```bash
-kubectl apply -f ./k8s/base/namespace.yaml -n "monitoring-platform"
-```
-
-apply deployments and services for each image you tested in docker before
-
-```bash
-kubectl apply -f ./k8s/base/api-deployment.yaml -n "monitoring-platform"
-kubectl apply -f ./k8s/base/dashboard-deployment.yaml -n "monitoring-platform"
-kubectl apply -f ./k8s/base/api-service.yaml -n "monitoring-platform"
-kubectl apply -f ./k8s/base/dashboard-deployment.yaml -n "monitoring-platform"
-```
----
-
-
-3. **Ingress**:
+2. **Ingress**:
 ```bash
 minikube addons enable ingress
 ```
@@ -105,5 +84,30 @@ run in PS:
 ```bash
 minikube tunnel
 ``` 
+
+3. **Apply kubernetes manifests usin Helm**:
+
+first create a namespace for your project
+
+#check kubectl commands by running "kubectl" in termila
+
+```bash
+kubectl apply -f ./k8s/base/namespace.yaml -n "monitoring-platform"
+```
+download helm. Save the helm.exe it in a folder "C:\tools" and define the variable in system variables. After run "helm version" to confirm that it is already run.
+
+go to folder "chart" and run
+
+```bash
+helm template .
+```
+This command will show you if your template is it correct.
+
+Finaly, run:
+```bash
+helm install chart . -n monitoring-platform 
+```
+It is DONE!!!
+---
 search in your browser: http://dashboard.local/
 
