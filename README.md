@@ -8,7 +8,8 @@ This repository contains a **mini fullstack application** with a frontend, an AP
 
 - [Project Structure](#project-structure)  
 - [Run with Docker](#run-with-docker)  
-- [Run with Minikube / Kubernetes](#run-with-minikube--kubernetes)  
+- [Run with Minikube / Kubernetes](#run-with-minikube--kubernetes)
+- [Helm](#helm)
 - [Access the Dashboard](#access-the-dashboard)
 
 ---
@@ -84,8 +85,9 @@ run in PS:
 ```bash
 minikube tunnel
 ``` 
+---
 
-3. **Apply kubernetes manifests usin Helm**:
+ ## Helm
 
 first create a namespace for your project
 
