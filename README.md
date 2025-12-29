@@ -86,14 +86,24 @@ kubectl apply -f ./k8s/base/dashboard-deployment.yaml -n "monitoring-platform"
 kubectl apply -f ./k8s/base/api-service.yaml -n "monitoring-platform"
 kubectl apply -f ./k8s/base/dashboard-deployment.yaml -n "monitoring-platform"
 ```
+---
 
-if you check that your pods are running correctly, 
-run the command below to forward a port for your web app service:
+
+3. **Ingress**:
+```bash
+minikube addons enable ingress
+```
+copy and paste 
 
 ```bash
-kubectl port-forward service/frontend 30080:80 -n monitoring-platform
-```
+127.0.0.1 dashboard.local
+``` 
+in "hosts" file with admin privileges.
 
-Access the Dashboard: http://localhost:30080
+run in PS:
 
----
+```bash
+minikube tunnel
+``` 
+search in your browser: http://dashboard.local/
+
