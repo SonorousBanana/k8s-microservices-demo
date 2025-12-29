@@ -29,7 +29,9 @@ k8s/
 ├── base/
 │ ├── namespace.yaml
 │ ├── api-deployment.yaml
-│ └── frontend-deployment.yaml
+│ ├── api-service.yaml
+│ ├── dashboard-deployment.yaml
+│ └── dashboard-service.yaml
 ```
 
 ---
