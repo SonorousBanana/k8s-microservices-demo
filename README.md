@@ -14,7 +14,7 @@ This repository contains a **mini fullstack application** with a frontend, an AP
 ---
 
 ## Project Structure
-
+```
 services/
 ├── api/
 │ ├── Dockerfile
@@ -30,7 +30,7 @@ k8s/
 │ ├── namespace.yaml
 │ ├── api-deployment.yaml
 │ └── frontend-deployment.yaml
-
+```
 
 ---
 
