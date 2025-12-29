@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-deployment
+  namespace: monitoring-platform
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+        - name: api
+          image: my-api:latest  # local image
+          imagePullPolicy: Never  # πολύ σημαντικό για local image
+          ports:
+            - containerPort: 5000
