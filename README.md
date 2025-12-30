@@ -27,11 +27,11 @@ services/
 │ └── app.js
 k8s/
 ├── base/
-│ ├── namespace.yaml
-│ ├── api-deployment.yaml
-│ ├── api-service.yaml
-│ ├── dashboard-deployment.yaml
-│ └── dashboard-service.yaml
+│ ├── namespace.yml
+│ ├── api-deployment.yml
+│ ├── api-service.yml
+│ ├── dashboard-deployment.yml
+│ └── dashboard-service.yml
 ```
 
 ---
