@@ -105,5 +105,7 @@ run in PS:
 ```bash
 minikube tunnel
 ``` 
-search in your browser: http://dashboard.local/
+## Access the Dashboard
+
+http://dashboard.local/
 
