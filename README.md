@@ -33,6 +33,17 @@ k8s/
 │ ├── api-service.yaml
 │ ├── dashboard-deployment.yaml
 │ └── dashboard-service.yaml
+├── chart/
+│ ├── templates/
+│ │  ├── dashboardhelm-deployment.yml
+│ │  ├── apihelm-deployment.yml
+│ │  ├── apihelm-service.yml
+│ │  ├── dashboardhelm-service.yaml
+│ │  ├── ingress.yml
+│ ├── Chart.yml
+│ └── values.yml
+│ ├── Chart.yml
+│ └── values.yml
 ```
 
 ---
